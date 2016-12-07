@@ -1,5 +1,12 @@
 {
-  "require" : {
-    "facebook/graph-sdk" : "~5.0"
-  }
+    "name": "tanguy/projetfb2016",
+    "require": {
+        "facebook/graph-sdk": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "Dalex Tanguy",
+            "email": "dalex.tanguy@gmail.com"
+        }
+    ]
 }
