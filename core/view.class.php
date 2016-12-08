@@ -26,8 +26,8 @@ class view{
 	}
 
 	public function __destruct(){
-		extract($this->data);
+		if(isset($this->data))
+			extract($this->data);
 		include $this->t;
 	}
-
 }

@@ -14,8 +14,11 @@
 
     $uri = trim($_SERVER["REQUEST_URI"], "/");
     $array_uri = explode("/", $uri);
-
-
+	
+	if(!isset($_SESSION['rerequest'])){
+		$_SESSION['rerequest'] = 0;
+	}
+	
     $c = (!empty($array_uri[0]))?$array_uri[0].'Controller':"indexController";
     
     $path_c = "controllers/".$c.".class.php";
